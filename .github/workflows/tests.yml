@@ -23,4 +23,4 @@ jobs:
           pip install pytest
 
       - name: Run Tests
-        run: pyrhon -m pytest tests/
+        run: python -m pytest tests/
