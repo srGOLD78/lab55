@@ -17,9 +17,10 @@ jobs:
           python-version: '3.12'
 
       - name: Install Dependencies
-        run:
+        run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt pytest
+          pip install -r requirements.txt
+          pip install pytest
 
       - name: Run Tests
         run: pyrhon -m pytest tests/
